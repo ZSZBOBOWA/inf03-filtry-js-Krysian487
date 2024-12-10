@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+    <main>
+        <div>
+            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="pszczola"><br>
+            <label><input type="radio" name="efekt" value="blur" id="blur"> Blur</label><br>
+            <label><input type="radio" name="efekt" value="sepia" id="sepia"> Sepia</label><br>
+            <label><input type="radio" name="efekt" value="negatyw" id="negatyw"> Negatyw</label><br>
+            <button onclick="zastosuj()">Zastosuj</button>
+        </div>
+        <div>
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="owoce"><br>
+            <button onclick="kolorowy()">Kolorowy</button>
+            <button onclick="czarnobialy()">Czarno-Biały</button>
+        </div>
+        <div>
+            <img src="owoce.jpg" alt="Kosz pełen owoców"><br>
+            <input type="range" min="0" max="100" value="100" id="przezroczystosc" name="przezroczystosc"><br>
+            <button onclick="przezroczystosc()">Zastosuj</button>
+        </div>
+        <div>
+            <img src="zolw.jpg" alt="Żółw w wodzie"><br>
+            <input type="range" min="0" max="250" id="jasnosc" name="jasnosc"><br>
+            <button onclick="jasnosc()">Zastosuj</button>
+        </div>
+    </main>
+    <footer>
+        <p><a href="http://www.css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: 0000000000000</p>
+    </footer>
+</body>
+
+</html>
